@@ -1,7 +1,7 @@
 # Robust DM-generated images detection with CLIP
 Santosh, Li Lin, Xin Wang, Shu Hu
 _________________
-This repository is the official implementation of our paper [Robust Diffusion Model-Generated Image Detection with CLIP]
+This repository is the official implementation of our paper [Robust CLIP-Based Detector for Exposing Diffusion Model-Generated Images]
 
 ### 1. Data Preparation
 * Download the dataset from the [HuggingFace](https://huggingface.co/datasets/elsaEU/ELSA_D3)
