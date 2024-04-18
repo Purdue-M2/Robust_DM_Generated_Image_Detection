@@ -35,6 +35,7 @@ def clip_all(folder):
         with h5py.File(f'clip_{folder}/{doc:04d}.h5', 'w') as fw:
             fw.create_dataset('img_id', data=img_id, **c)
             fw.create_dataset('original_prompt', data=np.array(original_prompt_clip), **c)
+            fw.create_dataset('real', data = real_img_clip, **c)
             fw.create_dataset('image_gen0', data=image_gen0_clip, **c)
             fw.create_dataset('image_gen1', data=image_gen1_clip, **c)
             fw.create_dataset('image_gen2', data=image_gen2_clip, **c)
