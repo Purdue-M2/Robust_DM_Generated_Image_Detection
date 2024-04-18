@@ -1,11 +1,11 @@
 # Robust DM-generated images detection with CLIP
 Santosh, Li Lin, Xin Wang, Shu Hu
 _________________
-This repository is the official implementation of our paper [Robust CLIP-Based Detector for Exposing Diffusion Model-Generated Images]
+This repository is the official implementation of our paper [Robust Diffusion Model-Generated Image Detection with CLIP]
 
 ### 1. Data Preparation
 * Download the dataset from the [HuggingFace](https://huggingface.co/datasets/elsaEU/ELSA_D3)
-* After getting the parquet files, convert the parquet files into h5 files.
+* After downloading the parquet files, tranform them into h5 files.
 ```python
 python get_data.py
 ```
@@ -32,13 +32,13 @@ python train.py
 ```python
  model_trainer(loss_type='auc', alpha=0.1,  batch_size=2048, num_epochs=32)
 ```
-Tune **gamma** loss on CVaR + AUC to find the best tradeoff hyperparameter
+Tune **gamma** on CVaR + AUC loss to find the best tradeoff hyperparameter
 
 ## Citation
 Please kindly consider citing our papers in your publications. 
 ```bash
 @article{Santosh2024robust,
-      title={Robust CLIP-Based Detector for Exposing Diffusion Model-Generated Images}, 
+      title={Robust Diffusion Model-Generated Image Detection with CLIP}, 
       author={Santosh and Li Lin and Xin Wang and Shu Hu},
       year={2024},
       eprint={},
