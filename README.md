@@ -37,12 +37,11 @@ Tune **gamma** on CVaR + AUC loss to find the best tradeoff hyperparameter
 ## Citation
 Please kindly consider citing our papers in your publications. 
 ```bash
-@article{Santosh2024robust,
+@inproceedings{Santosh2024robust,
       title={Robust Diffusion Model-Generated Image Detection with CLIP}, 
       author={Santosh and Li Lin and Xin Wang and Shu Hu},
+      booktitle={1st Workshop on New Trends in AI-Generated Media and Security},
       year={2024},
-      eprint={},
-      archivePrefix={},
 }
 ```
   
